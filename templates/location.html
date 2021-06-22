@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %} LOCATIONS {% endblock  %} </title>
+    <style> 
+    #ef{
+        height: 19mm;
+    }
+    </style>
+    
+    </head>
+
+    <body>
+        {% block body %}
+        <ul type="circle">
+        <nav>
+            <li> <a href="http://127.0.0.1:8000/location/kangra/"> KANGRA </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/solan/"> SOLAN </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/hamirpur/"> HAMIRPUR </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/chamba/"> CHAMBA </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/kinnaur/"> KINNAUR </a> <br /><br>
+            <li> <a href="http://127.0.0.1:8000/location/una/"> UNA </a> </li>  <br /> 
+            <li> <a href="http://127.0.0.1:8000/location/bilaspur/"> BILASPUR </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/kullu/"> KULLU </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/sirmaur/"> SIRMAUR </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/lahul_spiti/"> LAHUL SPITI </a> </li>  <br />
+            <li> <a href="http://127.0.0.1:8000/location/shimla/"> SHIMLA </a>  </li>  <br /> 
+            <li> <a href="http://127.0.0.1:8000/location/mandi/"> MANDI </a>  </li>  <br /> 
+        </nav>
+
+        <!-- <button id="ef">hello</button>
+        <textarea style="margin: 0px; width: 387px; height: 138px;"> hello </textarea> -->
+        {% endblock  %}
+
+
+
+
+        
+
+
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} LOGIN-CONTACT US {% endblock  %} </title>
+</head>
+
+<body>
+    {% block body %}
+
+    <div style="height: 400px; width: 400px; margin-left: 30%;">
+        <fieldset>
+            <legend> LOG IN </legend>
+            <form action="signin/loggedin/" method="POST"> {% csrf_token %}
+                USERNAME: <input type="text" name="username">
+                <br> <br>
+                PASSWORD: <input type="password" name="password">
+                <br>
+                <br><br>
+                <br><br>
+                <br>
+                <input type="submit" value="LOGIN" style="margin-left: 40%; width: 60px; height: 40px;">
+            </form>
+        </fieldset>
+    </div>
+
+
+
+
+
+    {% endblock  %}
+
+
+</body>
+
+</html>

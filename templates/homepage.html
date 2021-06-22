@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel ="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}"/> -->
+        <title>{% block title %} HOME{% endblock  %} </title>
+
+    </head>
+
+    <body>
+        <h2> hello</h2>
+        <!-- <caption id="pic2"> mall road</caption> -->
+        {% block body %}
+
+
+        <form action="/signin/" method="POST">{% csrf_token %}
+            <button class="sign_in" value="SIGN IN" name="sign_up" style=" height: 15%;
+                width: 20%;
+                position: absolute;
+                top: 230px;
+                right: 350px;
+                font-size: 12mm;
+                color: black;
+                background-color: aqua;
+                border: 8px dotted red;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
+                SIGN IN </button>
+        </form>
+
+
+
+        <form action="/signup/" method="POST" id="signup">{% csrf_token %}
+            <button value="SIGN UP" name="sign_up" style="height: 15%; width: 20%; position: absolute;
+        top: 230px; right: 750px; font-size: 12mm;  color: black; background-color: aqua;
+          border: 8px dotted red;" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
+                SIGN UP</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        {% include "sample_places.html" %}
+
+        <!-- <video width="300px" height="100px" controls>
+        <source src="http://youtu.be/3MGTmB3AK1E" type="video/mp4">
+        
+    </video> -->
+
+        {% comment %} <h2> hello</h2> {% endcomment %}
+        {% endblock  %}
+
+
+    </body>
+
+</html>

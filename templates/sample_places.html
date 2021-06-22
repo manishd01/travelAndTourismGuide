@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Docu</title>
+        <style>
+            .heading_sample{
+                background-color: black;
+                color: yellow;
+                font-family: cursive;
+                letter-spacing: 1mm;
+                padding-left: 4px;
+
+            }
+
+            .image_sample {
+                border: 2px solid black;
+                width: 400px;
+                height: 250px;
+            }
+
+            .ab {
+                position: absolute;
+                background-color: black;
+                color: yellow;
+                font-family: cursive;
+                letter-spacing: 1mm;
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <img class="image_sample" src="{% static 'images/homepage_images/mallroad.jpeg' %}" alt="html"
+            style="position:relative; left:40px" />
+        <h5 class="heading_sample" style="position: absolute; top: 600px; left:130px;">MALL ROAD </h5>
+         <a  class="ab"  href="http://127.0.0.1:8000/location/shimla/" style="top: 625px; left:350px;"> VISIT </a>
+        
+        <img class="image_sample" src="{% static 'images/homepage_images/kangrafort.jpeg' %}" alt="html"
+            style="position:relative; left:70px" />
+        <h5 class="heading_sample" style="position: absolute; top: 600px; left: 550px;">KANGRA FORT </h5>
+        <a class="ab" href="http://127.0.0.1:8000/location/kangra/"  style="top: 625px; left:750px;">  VISIT  </a>
+        
+        <img class="image_sample" src="{% static 'images/homepage_images/chintpurni.jpeg' %}" alt="html"
+            style="position:relative; left:100px" />
+        <h5 class="heading_sample" style="position: absolute; top: 600px;left: 950px;">CHINTPURNI TEMPLE </h5>
+         <a class="ab" href="http://127.0.0.1:8000/location/una/" style="top: 625px;">  VISIT  </a> 
+        <!-- <button action="" type="submit" style="top: 625px;"> VISIT </button> -->
+        <br> <br><br>
+
+        <img class="image_sample" src="{% static 'images/homepage_images/manikaran.jpeg' %}" alt="html"
+            style="position:relative; left:40px" />
+        <!-- <button action="" type="submit" style="top:919px;left:350px;"> VISIT </button> -->
+        <h5 class="heading_sample" style="position: absolute; top: 895px; left:130px; ">MANIKARAN </h5>
+         <a  class="ab"href="http://127.0.0.1:8000/location/kullu/"style="top:919px;left:350px;">  VISIT  </a> 
+
+        <img class="image_sample" src="{% static 'images/homepage_images/nithamirpur.jpeg' %}" alt="html"
+            style="position:relative; left:70px" />
+        <!-- <button action="" type="submit" style="top:919px;left:750px;"> VISIT </button> -->
+        <h5 class="heading_sample" style="position: absolute; top: 895px; left: 550px;">NIT HAMIRPUR </h5>
+        <a  class="ab"href="http://127.0.0.1:8000/location/hamirpur/" style="top:919px;left:750px;">  VISIT  </a>
+
+        <img class="image_sample" src="{% static 'images/homepage_images/rajgarh.jpeg' %}" alt="html"
+            style="position:relative; left:100px" />
+        <!-- <button action="" type="submit" style="top:919px;"> VISIT </button> -->
+        <h5 class="heading_sample" style="position: absolute; top: 895px;left: 950px;">RAJGARH </h5>
+        <a  class="ab"href="http://127.0.0.1:8000/location/sirmaur" class="image_sample"/" style="top:919px;">  VISIT  </a>
+
+
+    </body>
+
+</html>

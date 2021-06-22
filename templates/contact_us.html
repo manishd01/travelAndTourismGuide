@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* table, th, td {
+                border-width: 2px;
+                border-color: black;
+                } */
+    </style>
+    <title>{% block title %} CONTACT US {% endblock  %} </title>
+
+</head>
+
+<body>
+    {% block body %}
+    <h5 style="font-family: comic sans MS; font-size: 5mm;"> CONTACT US </h5>
+    <img src="{%static '/images/contactus.jpeg' %}" height="500px" width="500px">
+    <!-- <p>to get any information about this website , kindly contact any of the following persons: -->
+
+    <!-- </p> -->
+    <table border=14 style=" position: absolute; margin-left: 45%; top: 35%; padding: 16px; height: 500px;
+        width: 700px; font-size: 6mm; font-weight: bolder; font-family: comic sans MS; ">
+        <tr>
+            <th> NAME </th>
+            <th> MOBILE </th>
+            <th> E-MAIL </th>
+        </tr>
+
+        <tr>
+            <td> AMAN BHARTI </td>
+            <td> 6230133204 </td>
+            <td> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> amanb2966@gmail.com</a> </td>
+        </tr>
+        <tr>
+            <td> ANKITA </td>
+            <td> 8580520162 </td>
+            <td> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">dhimanankita764@gmail.com </a> </td>
+        </tr>
+        <tr>
+            <td> DIYA SHARMA </td>
+            <td> 8580766318 </td>
+            <td> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> diyasharma9634@gmail.com </a></td>
+        </tr>
+        <tr>
+            <td> MANISH </td>
+            <td> 7591097297 </td>
+            <td> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> manishd2300@gmail.com</a> </td>
+        </tr>
+
+
+
+    </table>
+
+    {% endblock  %}
+
+
+</body>
+
+</html>

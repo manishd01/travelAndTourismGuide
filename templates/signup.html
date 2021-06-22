@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} SIGN UP {% endblock  %} </title>
+</head>
+
+<body>
+    {% block body %}
+    <div style=" height: 800px; width: 700px; margin-left: 25%;">
+        <fieldset>
+            <legend> SIGN UP </legend>
+            <form action="addNewUser/" method="POST"> {% csrf_token %}
+
+                FIRST NAME: <input type="text" name="first_name" placeholder="first_name"> <br><br>
+                LAST NAME: <input type="text" name="last_name" placeholder="last_name"> <br><br>
+                USERNAME: <input type="text" name="username" placeholder="username"> <br> <br>
+                PASSWORD: <input type="password" name="password" placeholder="password"> <br><br>
+                CONFIRM PASSWORD: <input type="password" name="confirm_password" placeholder="confirm_password">
+                <br><br>
+                E-MAIL: <input type="email" name="email" placeholder="email"> <br><br>
+                MOBILE NUMBER: <input type="number" name="mobile_number" placeholder="mobile_number"> <br><br>
+                <br>
+                <br>
+
+                <input style="height: 50px; font-size: 5mm; text-align: center; margin-left: 300px;" type="submit"
+                    name="SIGN_UP" value="SIGN UP"> <br><br>
+                <!-- <ul>
+                    {% for i in detail %}
+                    <li> {{ i.detail }}</li>
+                    {% endfor %}
+                 </ul> - -->
+
+
+            </form>
+        </fieldset>
+    </div>
+    {% endblock  %}
+
+
+</body>
+
+</html>

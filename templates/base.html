@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}
+            {% endblock %} | Travel and Tourism</title>
+        <!-- <link ref="{% static 'images/icon.png' %}" rel="icon"> -->
+        <style>
+            .navi {
+                background-color: darkkhaki;
+                font-size: 7mm;
+                word-spacing: 5mm;
+            }
+
+            .navi a {
+                text-align: center;
+                font-family: palatino linotype;
+            }
+
+            .navi a:hover {
+                background-color: green;
+                color: black;
+            }
+
+            .navi a:active {
+                background-color: blue;
+                color: white;
+            }
+
+            .heading_base {
+                font-size: 2cm;
+                font-family: cursive;
+                color: brown;
+                position: relative;
+                margin: 0%;
+                background-color: bisque;
+                text-align: center;
+                height: 3.5cm;
+            }
+
+            h6 {
+
+                position: absolute;
+                bottom: 68%;
+                right: 15%;
+                font-size: 5mm;
+                background-color: beige;
+                color: navy;
+                font-weight: bolder;
+                font-family: monospace;
+                letter-spacing: 13mm;
+            }
+
+
+            /* #ds{
+                height: 90px;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navi">
+                <a href="http://127.0.0.1:8000/"> Home </a>
+                <a href="http://127.0.0.1:8000/location/"> Locations </a>
+                <a href="http://127.0.0.1:8000/signin/"> LogIn </a>
+                <a href="http://127.0.0.1:8000/about/"> AboutUs </a>
+                <a href="http://127.0.0.1:8000/contact_us"> ContactUs </a>
+                <input style="margin-left: 430px; height: 7mm;" type=" search">
+                <input style="height: 8mm;" type="button" value="SEARCH">
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="heading_base">TRAVEL AND TOURISM</h1>
+
+        <h6> HIMACHAL PRADESH </h6>
+        <marquee direction="right"> TOURISM OF HIMACHAL PRADESH (THE LAND OF GOD, FESTIVALS and NATURE) </marquee>
+
+        {% block body %}
+        {% endblock %}
+
+        <footer>
+            <div style="background-color: black;color: antiquewhite; text-align: center;
+            padding: 5px; font-style: italic; margin-top: 40px;">
+                @TravelAndTourism2020 </div>
+        </footer>
+
+        <!-- <button id="ds" type="submit" >hello</button> -->
+
+    </body>
+
+</html>

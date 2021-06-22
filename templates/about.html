@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} ABOUT {% endblock  %} </title>
+</head>
+
+<body>
+    {% block body %}
+    <img src="{% static 'images/aboutus.jpeg' %}" height="200px" width="1000px"
+        style="left: 13%; top: 0px; position: relative; ">
+    <img src="{% static 'images/about_img.jpg' %}" height="600px" width="1000px"
+        style="left: 13%; position: relative; top: 0px; opacity: 95%; border: 2px solid black;">
+
+    <h4 style="left: 260px; top: 400px; position: absolute; background-color: white ;letter-spacing: 5px; 
+            font-size: 6mm; font-family: elephant; color: teal;">
+        TRAVEL AND TOURISM OF HIMACHAL PRADESH </h4>
+    <p style="position: absolute; top: 500px; width:700px; left: 350px; text-align: justify; font-size: 17px; 
+        font-style:italic; background-color: yellow; color:black; opacity: 50%;
+        text-shadow: 0 0 3px black, 0 0 5px black; font-family: monospace;">
+
+        "Travel is the main thing you purchase that makes you more extravagent".
+        We, at <b>this organisation</b>
+        swear by this and put stock in satisfying travel dreams that makes you perpetually rich constantly.
+        We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.
+        ‘Organization Name’ has been focused on bringing our customers the best in esteem and quality travel
+        game plans. We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side,
+        and giving corporate explorers hello there contact administrations to encourage their business travel needs.
+        Fulfilled workers lead to fulfilled clients. We know the development and accomplishment of our organization
+        relies on satisfying our customers needs each day. That is additionally our guarantee.
+        ‘Organization Name’ works intimately with the Ministry of Tourism, Government of HIMACHAL PRADESH.
+        We effectively take an interest in the Tourism Meetings gathered by the Government.
+        We are effectively connected with State Tourism Boards of HIMACHAL PRADESH.
+    </p>
+
+    <h1> </h1>
+    {% endblock  %}
+
+
+</body>
+
+</html>
